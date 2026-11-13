@@ -1,0 +1,30 @@
+COMMONPLACE PORTABLE FRONT-END BACKUP
+Created: November 13, 2026
+
+WHAT IS INCLUDED
+- The Commonplace landing page, styling, icons, and static assets.
+- The complete browser editions of Patternwork and Artificience.
+- The links and descriptions for all three rooms.
+
+HOW TO HOST IT
+1. Unzip this archive.
+2. Upload the unzipped folder to any static web host.
+3. Serve index.html from the root.
+
+No build step, database, or server runtime is required for Commonplace,
+Patternwork, or Artificience. Browser-local progress stays on each visitor's
+device and should be moved with the JSON backup controls inside each app.
+
+MARGIN
+Margin remains an external, account-backed Site. Its link can be replaced with
+a future domain without changing the other two apps.
+
+OPTIONAL LARGE DOWNLOADS
+The portable archive omits the large Mac/source package chunks and the older
+Artificience download ZIP to keep this source backup small. The embedded web
+apps are complete. Restore those optional files in downloads/ or remove their
+download links if publishing this copy elsewhere.
+
+CUSTOM DOMAIN
+The site uses relative internal paths, so it can be moved to another domain or
+static host without changing Patternwork or Artificience URLs.

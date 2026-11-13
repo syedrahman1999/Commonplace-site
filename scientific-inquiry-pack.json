@@ -1,0 +1,206 @@
+{
+  "id": "science-pack",
+  "title": "Experiments as explanations",
+  "short": "Scientific inquiry",
+  "tag": "SCIENCE",
+  "number": "04",
+  "symbol": "✳",
+  "tone": "blue",
+  "description": "A full-feature sample imported pathway: controlled comparisons, optional observation checks, first transfer and delayed independent retrieval.",
+  "objective": "Investigate how one controlled variable affects a measurable outcome and recognize confounders.",
+  "skills": [
+    {
+      "id": "controlled-change",
+      "title": "Change one variable",
+      "label": "Lesson 01",
+      "kicker": "What did the experiment actually test?",
+      "pattern": "A controlled comparison changes one focal variable while holding relevant alternatives as stable as possible.",
+      "pair": [
+        "Matched seedlings, with equal water and soil, receive six hours of light daily.",
+        "Matched seedlings, with equal water and soil, receive eight hours of light daily."
+      ],
+      "delta": "Both examples concern matched seedlings receiving light each day, with water and soil explicitly held equal. Only the daily light exposure changes, from six to eight hours. To attribute a later growth difference to light, a real experiment would also hold watering, soil and other relevant conditions comparable.",
+      "anatomy": [
+        "Identify the outcome that will be measured: growth.",
+        "Find the only deliberately changed condition: hours of light.",
+        "Check other conditions, such as watering and soil, are comparable across groups.",
+        "Compare measured growth and consider replication before claiming causality."
+      ],
+      "sketch": "GROUP A: matched seedlings + 6 hours of light/day\nGROUP B: matched seedlings + 8 hours of light/day\nCHANGE: daily light exposure (6 → 8 hours)\nMEASURE: subsequent growth\nHELD EQUAL: water and soil\nALSO CONTROL IN A REAL TEST: temperature and starting condition",
+      "trap": "A difference in outcome cannot automatically be assigned to the focal variable if other important conditions also change.",
+      "transfer": "Ask whether the groups differ in more than one relevant way.",
+      "questions": [
+        {
+          "prompt": "A researcher tests sunlight's effect on plant height. What is the manipulated variable?",
+          "options": [
+            "Plant height",
+            "Hours of sunlight",
+            "Final leaf count",
+            "Growth rate"
+          ],
+          "correct": 1,
+          "explanation": "Hours of sunlight are deliberately changed; plant growth is measured.",
+          "tip": "Which factor does the investigator control?"
+        },
+        {
+          "prompt": "Which factor should be held comparable when testing sunlight?",
+          "options": [
+            "Water provided",
+            "Hours of sunlight",
+            "Growth difference",
+            "Measured height"
+          ],
+          "correct": 0,
+          "explanation": "Water is a potential confounder and should stay comparable.",
+          "tip": "What else could change plant growth?"
+        },
+        {
+          "prompt": "Two plant groups receive different light and different soil. What is the main problem?",
+          "options": [
+            "Both plants grew",
+            "More than one relevant condition changed",
+            "There were two groups",
+            "Growth was measured"
+          ],
+          "correct": 1,
+          "explanation": "Different soil and light make it harder to isolate which factor caused any growth difference.",
+          "tip": "Count the changed factors."
+        },
+        {
+          "prompt": "If the groups differ only in light exposure and show different growth, what is the strongest conclusion?",
+          "options": [
+            "Light is certainly the only cause of growth",
+            "The result supports an effect of light under these conditions",
+            "The result proves all plants react identically",
+            "The difference must be random"
+          ],
+          "correct": 1,
+          "explanation": "A controlled comparison supports the light hypothesis, while scope and replication still matter.",
+          "tip": "Do not make a conclusion broader than the test."
+        }
+      ],
+      "observe": {
+        "stable": {
+          "prompt": "Across the two descriptions, which relationship is held constant?",
+          "options": [
+            "The light exposure is always six hours.",
+            "Matched seedlings receive a daily light treatment.",
+            "Both groups have already grown the same amount."
+          ],
+          "correct": 1,
+          "explanation": "Both examples describe matched seedlings receiving daily light; neither says the measured growth is already equal."
+        },
+        "changed": {
+          "prompt": "What single feature of the comparison changes?",
+          "options": [
+            "The species of the plants.",
+            "The amount of water given to seedlings.",
+            "The hours of light per day, from six to eight."
+          ],
+          "correct": 2,
+          "explanation": "Only light exposure differs in the opening pair; soil and water have not been changed in those descriptions."
+        }
+      },
+      "practice": [
+        {
+          "prompt": "A team tests whether salt changes how quickly ice melts. Which design changes only the focal variable?",
+          "options": [
+            "Equal ice cubes at the same temperature; only salt amount differs.",
+            "Different ice sizes, salt amounts and room temperatures.",
+            "Equal salt amounts but different ice sizes.",
+            "One ice cube is measured and the other is not."
+          ],
+          "correct": 0,
+          "explanation": "Matching cube size and temperature while varying salt isolates the salt condition more clearly.",
+          "tip": "Hold plausible competing causes comparable."
+        },
+        {
+          "prompt": "Two identical paper airplanes use different wing angles, but one is thrown much harder. Why is the comparison weak?",
+          "options": [
+            "Paper airplanes cannot be tested.",
+            "Distance cannot be measured.",
+            "Throwing force changed along with wing angle.",
+            "The airplanes have wings."
+          ],
+          "correct": 2,
+          "explanation": "Throwing force is a second relevant change, so distance differences cannot be isolated to wing angle.",
+          "tip": "Count the relevant conditions that changed."
+        },
+        {
+          "prompt": "A light experiment changes bulb color and measures moth visits. What is the dependent variable?",
+          "options": [
+            "Bulb color",
+            "Number of moth visits",
+            "The experimenter's hypothesis",
+            "The lamp label"
+          ],
+          "correct": 1,
+          "explanation": "Moth visits are the measured outcome; bulb color is the manipulated variable.",
+          "tip": "Separate what is changed from what is measured."
+        },
+        {
+          "prompt": "Replicated trials show a controlled temperature difference is associated with faster germination. Which conclusion is appropriately scoped?",
+          "options": [
+            "Temperature controls every aspect of every seed.",
+            "The tested temperature difference affected germination under these conditions.",
+            "No other variable can ever matter.",
+            "Every plant species must respond identically."
+          ],
+          "correct": 1,
+          "explanation": "The result supports a qualified conclusion about the tested conditions without claiming universality.",
+          "tip": "Keep the claim no broader than the design and observations."
+        }
+      ],
+      "retest": [
+        {
+          "prompt": "Two matched yeast cultures differ only in temperature: 24°C versus 30°C. Which inference is justified if they grow at different rates?",
+          "options": [
+            "Temperature is proved to be the sole cause in every culture.",
+            "Both temperature and nutrient amount were deliberately changed.",
+            "The result supports a temperature effect under these conditions, pending replication.",
+            "The result cannot be used because temperatures differ."
+          ],
+          "correct": 2,
+          "explanation": "A controlled temperature difference supports a qualified causal hypothesis, but replication and alternative explanations still matter.",
+          "tip": "Distinguish evidence under tested conditions from universal proof."
+        },
+        {
+          "prompt": "You want to test whether fertilizer type changes root length. Which design most clearly isolates fertilizer type?",
+          "options": [
+            "Same seed variety, water and light; only fertilizer type differs.",
+            "Different seed varieties and fertilizers; equal water.",
+            "Same fertilizer; different sunlight and soil.",
+            "Different fertilizer, water and temperatures for each group."
+          ],
+          "correct": 0,
+          "explanation": "Matched conditions isolate fertilizer type as the focal manipulated factor.",
+          "tip": "Look for the comparison with the fewest relevant simultaneous changes."
+        },
+        {
+          "prompt": "A student claims a new study technique caused better test scores. Both study method and daily sleep changed. What is the main problem?",
+          "options": [
+            "Test scores should never be measured.",
+            "Sleep cannot influence attention.",
+            "A change in technique is never measurable.",
+            "Two relevant factors changed, so the result cannot isolate the technique effect."
+          ],
+          "correct": 3,
+          "explanation": "Changing sleep and study method together introduces a potential confounder.",
+          "tip": "Check whether a competing cause also varies."
+        },
+        {
+          "prompt": "An experiment compares identical containers with the same soil and water, varying only seed depth. What is the dependent variable if investigators measure days until sprouting?",
+          "options": [
+            "Seed depth",
+            "Days until sprouting",
+            "Container type",
+            "Amount of water"
+          ],
+          "correct": 1,
+          "explanation": "Days until sprouting is the measured outcome; seed depth is the deliberately changed factor.",
+          "tip": "Separate what is manipulated from what is measured."
+        }
+      ]
+    }
+  ]
+}
